@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vladyslava Karpenko — Full Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="#home" class="logo">Vladyslava<span>.cz</span></a>
+
+    <nav class="main-nav">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#journey" data-i18n="navJourney">Journey</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="header-right">
+
+        <div class="language-switcher">
+            <button class="lang active" data-lang="en">EN</button>
+            <button class="lang" data-lang="cs">CS</button>
+            <button class="lang" data-lang="ua">UA</button>
+        </div>
+
+        <a href="#contact" class="header-cta">
+            <span data-i18n="letsTalk">Let's Talk</span>
+            <span class="arrow">↗</span>
+        </a>
+
+    </div>
+
+<button class="mobile-menu" aria-label="Open menu">
+    <span></span>
+    <span></span>
+</button>
+</header>
+<div class="mobile-nav" id="mobileNav">
+
+    <div class="mobile-nav-top">
+
+        <span>MENU</span>
+
+        <button
+            class="mobile-close"
+            id="mobileClose"
+            aria-label="Close menu"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <nav class="mobile-nav-links">
+
+        <a href="#about" data-i18n="navAbout">
+            About
+        </a>
+
+        <a href="#skills" data-i18n="navSkills">
+            Skills
+        </a>
+
+        <a href="#journey" data-i18n="navJourney">
+            Journey
+        </a>
+
+        <a href="#contact" data-i18n="navContact">
+            Contact
+        </a>
+
+    </nav>
+
+
+    <div class="mobile-nav-bottom">
+
+        <div class="language-switcher">
+
+            <button
+                class="lang active"
+                data-lang="en"
+            >
+                EN
+            </button>
+
+            <button
+                class="lang"
+                data-lang="cs"
+            >
+                CS
+            </button>
+
+            <button
+                class="lang"
+                data-lang="ua"
+            >
+                UA
+            </button>
+
+        </div>
+
+        <span>Vladyslava.cz</span>
+
+    </div>
+
+</div>
+
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <div class="eyebrow" data-i18n="hero.eyebrow">
+          FULL STACK DEVELOPER
+        </div>
+
+        <h1>
+          Vladyslava<br>
+          Karpenko
+        </h1>
+
+        <p class="hero-description" data-i18n="hero.description">
+          I build modern web applications<br>
+          with clean code and meaningful design.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#contact" class="button button-dark">
+            <span data-i18n="hero.contact">Get in Touch</span>
+            <span>→</span>
+          </a>
+
+          <a href="#about" class="button button-light">
+            <span data-i18n="hero.about">About Me</span>
+          </a>
+
+        </div>
+
+        <div class="hero-bottom">
+
+          <div class="socials">
+
+            <a
+  href="https://wa.me/420735851069"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp"
+>
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+            <a href="https://github.com/Vladyslava-Karpenko" aria-label="GitHub">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.55v-2.12c-3.2.69-3.87-1.36-3.87-1.36-.53-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.21-1.5 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.07.78 2.16v3.2c0 .31.21.66.8.55A11.52 11.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+              </svg>
+            </a>
+
+            <a
+  href="mailto:vladyslava.karpenko.cz@gmail.com"
+  aria-label="Email"
+>
+  <i class="fa-solid fa-envelope"></i>
+</a>
+
+          </div>
+
+          <div class="location">
+            PRAGUE, CZECH REPUBLIC
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PHOTO -->
+      <div class="hero-image">
+
+        <img src="/profile.PNG" alt="Vladyslava Karpenko">
+
+        <!-- Именно этот слой делает плавный переход -->
+        <div class="image-fade"></div>
+
+        <div class="image-decoration top">
+          Good<br>
+          People<br>
+          Brighter<br>
+          Days
+          <span>♡</span>
+        </div>
+
+        <div class="image-decoration bottom">
+          SAME SOUL<br>
+          BRIGHTER<br>
+          TOMORROW
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+
+      <div class="section-label">
+        ABOUT ME
+      </div>
+
+      <div class="about-grid">
+
+        <div>
+          <h2 data-i18n="about.title">
+            Turning ideas<br>
+            into real solutions
+          </h2>
+
+          <p data-i18n="about.text">
+            I'm Vladyslava, a Full Stack Developer based in Prague.
+            I'm passionate about web development, modern interfaces
+            and creating useful web applications.
+          </p>
+
+          <a href="#skills" class="outline-link">
+            <span data-i18n="about.button">Learn more about me</span>
+            →
+          </a>
+        </div>
+
+
+        <section class="stack-section" id="skills">
+
+    <div class="section-label">
+        <span>02</span>
+        <span data-i18n="stackLabel">MY STACK</span>
+    </div>
+
+    <div class="stack-grid">
+
+        <div class="stack-item">
+            <span class="stack-number">01</span>
+            <div>
+                <h3>HTML</h3>
+                <p data-i18n="htmlDesc">Markup & semantics</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">02</span>
+            <div>
+                <h3>CSS</h3>
+                <p data-i18n="cssDesc">Styling & layout</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">03</span>
+            <div>
+                <h3>JavaScript</h3>
+                <p data-i18n="jsDesc">Interactive interfaces</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">04</span>
+            <div>
+                <h3>React</h3>
+                <p data-i18n="reactDesc">UI development</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">05</span>
+            <div>
+                <h3>Tailwind CSS</h3>
+                <p data-i18n="tailwindDesc">Utility-first CSS</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">06</span>
+            <div>
+                <h3>Python</h3>
+                <p data-i18n="pythonDesc">Backend development</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">07</span>
+            <div>
+                <h3>Django</h3>
+                <p data-i18n="djangoDesc">Web framework</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">08</span>
+            <div>
+                <h3>PostgreSQL</h3>
+                <p data-i18n="postgresDesc">Database</p>
+            </div>
+        </div>
+
+        <div class="stack-item">
+            <span class="stack-number">09</span>
+            <div>
+                <h3>Git</h3>
+                <p data-i18n="gitDesc">Version control</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+      </div>
+
+    </section>
+
+
+    <!-- JOURNEY -->
+    <section class="journey section" id="journey">
+
+      <div class="section-label">
+        MY JOURNEY
+      </div>
+
+      <h2 data-i18n="journey.title">
+        A path of<br>
+        continuous growth
+      </h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <strong>2024</strong>
+          <p>Started learning<br>web development</p>
+        </div>
+
+        <div class="timeline-item">
+          <strong>2025</strong>
+          <p>HTML, CSS<br>JavaScript</p>
+        </div>
+
+        <div class="timeline-item">
+          <strong>2026</strong>
+          <p>React, Python<br>Django, PostgreSQL</p>
+        </div>
+
+        <div class="timeline-item">
+          <strong>Now</strong>
+          <p>Building real projects<br>and new opportunities</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact">
+
+      <div>
+
+        <div class="section-label">
+          LET'S WORK TOGETHER
+        </div>
+
+        <h2 data-i18n="contact.title">
+          Let's build something amazing
+        </h2>
+
+        <p data-i18n="contact.text">
+          Have a project in mind or just want to say hi?
+          I'd love to hear from you.
+        </p>
+
+      </div>
+
+      <a href="mailto:vladyslava.karpenko.cz@gmail.com" class="button button-dark">
+        <span data-i18n="contact.button">Get in Touch</span>
+        →
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+
+    <strong>Vladyslava.cz</strong>
+
+    <span>© 2026 Vladyslava Karpenko</span>
+
+    <a href="#home">↑</a>
+
+  </footer>
+
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
