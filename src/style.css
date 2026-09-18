@@ -222,8 +222,21 @@ button {
 }
 
 .arrow {
-  font-size: 14px;
-  line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 16px;
+    height: 16px;
+
+    flex-shrink: 0;
+}
+
+.arrow svg {
+    width: 14px;
+    height: 14px;
+
+    display: block;
 }
 
 
